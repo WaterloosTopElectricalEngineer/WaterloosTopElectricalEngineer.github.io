@@ -31,6 +31,7 @@ nav a:hover { text-decoration: underline; }
 .home-link, .sidebar-social, .nav-icon { display: none; }
 .intro { display: grid; grid-template-columns: minmax(0, max-content) minmax(max-content, 1fr); column-gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
 .intro h1 { font-size: clamp(1.75rem, 3.4vw, 3.25rem); max-width: 26ch; }
+.intro-tagline { font-family: Georgia, "Times New Roman", serif; font-style: italic; letter-spacing: -.025em; }
 .intro .actions { display: grid; justify-self: center; gap: .55rem; margin: 0; }
 .intro .actions a { min-height: 3rem; padding: .75rem clamp(1rem, 2vw, 1.75rem); text-align: center; font-size: clamp(1rem, 1.5vw, 1.2rem); }
 .intro .actions .secondary { background: white; color: var(--ink); border: 1px solid var(--ink); }
