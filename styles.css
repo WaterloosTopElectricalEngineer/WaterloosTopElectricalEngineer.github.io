@@ -28,11 +28,13 @@ nav a:hover { text-decoration: underline; }
 .brand { font-weight: 760; letter-spacing: -.035em; font-size: 1rem; }
 .nav-links { flex: 1 1 32rem; justify-content: space-between; max-width: 43rem; gap: .3rem 1rem; font-size: .9375rem; }
 .nav-links a { padding-block: .25rem; }
-.intro { padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
+.intro { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
 .intro h1 { font-size: clamp(2.25rem, 5vw, 4.6rem); max-width: 20ch; }
-.intro .actions { margin-top: clamp(1.1rem, 2.5vw, 2rem); gap: .85rem; }
-.intro .actions a { padding: .2rem .4rem; background: transparent; color: var(--ink); border-bottom: 1px solid var(--ink); text-decoration: none; font-size: .9375rem; font-weight: 500; }
-.intro .actions a:hover { background: #f1f1f1; }
+.intro-copy { grid-area: 1 / 2; }
+.intro .actions { grid-area: 1 / 1; display: grid; gap: .55rem; margin: 0; }
+.intro .actions a { text-align: center; font-size: .9375rem; }
+.intro .actions .secondary { background: white; color: var(--ink); border: 1px solid var(--ink); }
+.intro .actions .secondary:hover { background: #f1f1f1; }
 .eyebrow { color: var(--accent); text-transform: uppercase; font: 500 .875rem/1.45 ui-monospace, monospace; letter-spacing: 0; }
 h1, h2 { font-family: var(--display); font-weight: 730; letter-spacing: -.055em; line-height: 1.05; }
 h1 { font-size: clamp(1.65rem, 2.4vw, 2.5rem); max-width: 43rem; margin-top: .2rem; font-weight: 500; line-height: 1.18; letter-spacing: -.045em; }
@@ -106,6 +108,9 @@ footer .button:hover { background: #254867; }
   .wrap { width: calc(100% - 2rem); }
   main:has(.intro) .wrap { width: calc(100% - 1.5rem); }
   .nav-links { max-width: none; }
+  .intro { grid-template-columns: minmax(0, 1fr); row-gap: 1rem; }
+  .intro-copy, .intro .actions { grid-area: auto; }
+  .intro .actions { display: flex; }
   .project-grid, .detail-grid, .leadership-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 28rem) {
