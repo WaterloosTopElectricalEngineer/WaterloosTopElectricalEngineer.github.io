@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Jeffrey Lee, Electrical Engineering co-op student at the University of Waterloo. Explore my projects in electronics, embedded systems, and fabrication.">
   <title>Jeffrey Lee | Electrical Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -22,17 +22,21 @@
 <h1 id="intro-title">I’m Jeffrey Lee, an electrical engineering student at Waterloo. I try to build cool stuff.</h1>
 </div>
 <div class="actions"><a class="button" href="#resume">View résumé</a><a class="button secondary" href="#contact">Contact me</a></div>
-</section><section class="projects wrap" id="projects" aria-labelledby="work-title"><h2 id="work-title">Selected projects</h2><div class="project-grid"><article class="card"><a href="arcade.html">
-    <div class="media"><div class="feature-image"><img src="assets/arcade.webp" alt="The assembled two-player arcade cabinet in use at school" width="1080" height="1440" fetchpriority="high"></div></div>
-    <div class="card-copy"><p class="eyebrow">Hardware &amp; fabrication</p><h3>Raspberry Pi Arcade Cabinet</h3><p>A two-player cabinet I laser-cut, wired, and configured for school events.</p></div>
-    </a></article>
-<article class="card"><a href="food.html">
+</section><section class="projects wrap" id="projects" aria-labelledby="work-title"><h2 id="work-title">Selected projects</h2><div class="project-grid"><article class="card"><a href="food.html">
     <div class="media"><div class="photo-strip">
-            <img src="assets/coffee.webp" alt="Prototype screen displaying Coffee" width="665" height="595" loading="lazy">
+            <img src="assets/coffee.webp" alt="Prototype screen displaying Coffee" width="665" height="595" fetchpriority="high">
             <img src="assets/chili.webp" alt="Prototype screen displaying the chili powder prediction" width="641" height="613" loading="lazy">
             <img src="assets/cashew.webp" alt="Prototype screen displaying Cashew" width="657" height="633" loading="lazy">
           </div></div>
-    <div class="card-copy"><p class="eyebrow">Sensors &amp; embedded systems</p><h3>Food Classification Prototype</h3><p>An Arduino gas-sensor array that explored how to tell food samples apart.</p></div>
+    <div class="card-copy"><p class="eyebrow">Sensors &amp; embedded systems</p><h3>Allergen Detector Prototype</h3><p>An Arduino gas-sensor prototype that explored allergen detection by testing whether it could tell food samples apart.</p></div>
+    </a></article>
+<article class="card"><a href="fixit.html">
+    <div class="media"><img class="cover fixit" src="assets/fixit.webp" alt="Screenshot of the FixIt Homecare website" width="1440" height="638" loading="lazy"></div>
+    <div class="card-copy"><p class="eyebrow">Web development &amp; entrepreneurship</p><h3>FixIt Homecare</h3><p>A website and intake system for a youth-run home maintenance service.</p></div>
+    </a></article>
+<article class="card"><a href="arcade.html">
+    <div class="media"><div class="feature-image"><img src="assets/arcade.webp" alt="The assembled two-player arcade cabinet in use at school" width="1080" height="1440" loading="lazy"></div></div>
+    <div class="card-copy"><p class="eyebrow">Hardware &amp; fabrication</p><h3>Raspberry Pi Arcade Cabinet</h3><p>A two-player cabinet I laser-cut, wired, and configured for school events.</p></div>
     </a></article>
 <article class="card"><a href="submarine.html">
     <div class="media"><div class="photo-strip submarine">
@@ -44,17 +48,14 @@
 <article class="card"><a href="light-switch.html">
     <div class="media"><img class="cover" src="assets/light-switch.webp" alt="Arduino light switch prototype with an ultrasonic sensor, servo, and jumper wires" width="1440" height="1080" loading="lazy"></div>
     <div class="card-copy"><p class="eyebrow">Home automation</p><h3>Automatic Light Switch</h3><p>An Arduino prototype that senses activity and mechanically toggles a switch.</p></div>
-    </a></article>
-<article class="card"><a href="fixit.html">
-    <div class="media"><img class="cover fixit" src="assets/fixit.webp" alt="Screenshot of the FixIt Homecare website" width="1440" height="638" loading="lazy"></div>
-    <div class="card-copy"><p class="eyebrow">Web development &amp; entrepreneurship</p><h3>FixIt Homecare</h3><p>A website and intake system for a youth-run home maintenance service.</p></div>
     </a></article></div></section><section class="about" id="about" aria-labelledby="about-title">
       <div class="wrap about-layout">
         <div class="about-copy">
           <h2 id="about-title">About me</h2>
           <p>I’m Jeffrey Lee, an electrical engineering co-op student at the University of Waterloo. I like learning new things by picking a project and figuring out what I need to know along the way.</p>
-          <p>I learned how to build a printed circuit board (PCB) while working with my team on a fall detector. Building a two-player arcade cabinet taught me how to wire buttons and joysticks and fit the electronics into a laser-cut enclosure. When I tested my twin-motor submarine in a bathtub, I saw firsthand how much balance and sealing matter once a design goes into the water.</p>
-          <p>My goal is to help as many people as I can with the things I build. I want what I learn on each project to help me make the next one more useful to the people it’s meant for. I’ll share more about the fall detector here soon.</p>
+          <p>I learned how to build a printed circuit board (PCB) while working with my team on a fall detector. Building a two-player arcade cabinet taught me how to wire buttons and joysticks and fit the electronics into a laser-cut enclosure.</p>
+          <p>Co-founding FixIt Homecare taught me how to turn a job request into something a team could act on. I built the website and managed online intake, then helped coordinate crews and equipment for home maintenance jobs.</p>
+          <p>My goal is to help as many people as I can with the things I build. I want what I learn on each project to help me make the next one more useful to the people it’s meant for.</p>
         </div>
         <img class="about-portrait" src="assets/jeffrey-lee-portrait.webp" alt="Portrait of Jeffrey Lee" width="512" height="681" loading="lazy">
       </div>
@@ -62,6 +63,10 @@
     <section class="resume" id="resume" aria-labelledby="resume-title">
       <div class="wrap">
         <div class="resume-header">
+          <div class="resume-actions">
+            <a class="button" href="assets/jeffrey-lee-resume.pdf" target="_blank" rel="noopener">Open résumé PDF (new tab)</a>
+            <a class="text-link" href="assets/jeffrey-lee-resume.pdf" download="Resume - Jeffrey Lee.pdf">Download PDF</a>
+          </div>
           <div>
             <h2 id="resume-title">Résumé</h2>
             <p class="resume-name">Jeffrey Lee</p>
@@ -71,10 +76,6 @@
               <li><a href="tel:+17788868928">+1-778-886-8928</a></li>
               <li><a href="https://www.linkedin.com/in/jeffrey-lee-b15497322/">LinkedIn</a></li>
             </ul>
-          </div>
-          <div class="resume-actions">
-            <a class="button" href="assets/jeffrey-lee-resume.pdf" target="_blank" rel="noopener">Open résumé PDF (new tab)</a>
-            <a class="text-link" href="assets/jeffrey-lee-resume.pdf" download="Resume - Jeffrey Lee.pdf">Download PDF</a>
           </div>
         </div>
 

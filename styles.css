@@ -28,9 +28,9 @@ nav a:hover { text-decoration: underline; }
 .brand { font-weight: 760; letter-spacing: -.035em; font-size: 1rem; }
 .nav-links { flex: 1 1 32rem; justify-content: space-between; max-width: 43rem; gap: .3rem 1rem; font-size: .9375rem; }
 .nav-links a { padding-block: .25rem; }
-.intro { display: grid; grid-template-columns: minmax(0, 1fr) max-content; column-gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
+.intro { display: grid; grid-template-columns: minmax(0, max-content) minmax(max-content, 1fr); column-gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
 .intro h1 { font-size: clamp(2.25rem, 5vw, 4.6rem); max-width: 20ch; }
-.intro .actions { display: grid; justify-self: end; gap: .55rem; margin: 0; }
+.intro .actions { display: grid; justify-self: center; gap: .55rem; margin: 0; }
 .intro .actions a { text-align: center; font-size: .9375rem; }
 .intro .actions .secondary { background: white; color: var(--ink); border: 1px solid var(--ink); }
 .intro .actions .secondary:hover { background: #f1f1f1; }
@@ -51,11 +51,11 @@ h3 { line-height: 1.17; letter-spacing: -.035em; }
 .media { overflow: hidden; background: #d6e2ed; }
 .card .media { aspect-ratio: 1.53; padding: 8% 11%; }
 .card .media > * { box-shadow: 0 .7rem 1.6rem #0004; }
-.card:nth-child(1) .media { background: linear-gradient(120deg,#e2c75d,#bed569); }
-.card:nth-child(2) .media { background: linear-gradient(125deg,#86b6ce,#235683); }
-.card:nth-child(3) .media { background: linear-gradient(125deg,#b6d7db,#41848b); }
-.card:nth-child(4) .media { background: linear-gradient(125deg,#dfbd96,#ac735b); }
-.card:nth-child(5) .media { background: linear-gradient(125deg,#d1d9bb,#758d69); }
+.card > a[href="arcade.html"] .media { background: linear-gradient(120deg,#e2c75d,#bed569); }
+.card > a[href="food.html"] .media { background: linear-gradient(125deg,#86b6ce,#235683); }
+.card > a[href="submarine.html"] .media { background: linear-gradient(125deg,#b6d7db,#41848b); }
+.card > a[href="light-switch.html"] .media { background: linear-gradient(125deg,#dfbd96,#ac735b); }
+.card > a[href="fixit.html"] .media { background: linear-gradient(125deg,#d1d9bb,#758d69); }
 .media > *, .media > .feature-image img { width: 100%; height: 100%; }
 .feature-image img { object-position: 50% 32%; }
 .photo-strip { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); grid-template-rows: minmax(0,1fr); gap: 4px; }
@@ -93,8 +93,8 @@ h3 { line-height: 1.17; letter-spacing: -.035em; }
 .resume-group + .resume-group { margin-top: 1.65rem; }
 .resume .experience div { padding-block: .85rem; }
 footer { padding-block: 2.5rem; background: #111; color: white; }
-.footer-flex { justify-content: center; text-align: center; }
-.footer-flex .actions { justify-content: center; }
+.footer-flex { justify-content: space-between; }
+.footer-flex .actions { justify-content: flex-end; margin-left: auto; }
 footer h2 { margin-bottom: .6rem; }
 footer .actions { margin-top: 0; }
 footer .button { background: transparent; border: 1px solid #c4d8e9; }
