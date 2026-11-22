@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Jeffrey Lee, Electrical Engineering co-op student at the University of Waterloo. Explore my projects in electronics, embedded systems, and fabrication.">
   <title>Jeffrey Lee | Electrical Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -49,18 +49,12 @@
     <div class="media"><img class="cover fixit" src="assets/fixit.webp" alt="Screenshot of the FixIt Homecare website" width="1440" height="638" loading="lazy"></div>
     <div class="card-copy"><p class="eyebrow">Web development &amp; entrepreneurship</p><h3>FixIt Homecare</h3><p>A website and intake system for a youth-run home maintenance service.</p></div>
     </a></article></div></section><section class="about" id="about" aria-labelledby="about-title">
-      <div class="wrap about-grid">
-        <div>
-          <h2 id="about-title">About me</h2>
-          <p>I’m pursuing a Bachelor of Applied Science in Electrical Engineering at the University of Waterloo. My projects take me from breadboarding and programming to CAD, fabrication, and testing.</p>
-          <h3>Technical skills</h3>
-          <ul class="tags" aria-label="Technical skills"><li>Arduino</li><li>Raspberry Pi</li><li>KiCad</li><li>Onshape</li><li>Soldering</li><li>C++</li><li>Python</li><li>Java</li><li>HTML/CSS</li><li>JavaScript</li></ul>
-        </div>
-        <div>
-          <h3>Experience</h3>
-          <dl class="experience">
-            <div><dt>FixIt Homecare</dt><dd>Co-founder, website developer &amp; marketing lead</dd></div>
-          </dl>
+      <div class="wrap">
+        <h2 id="about-title">About me</h2>
+        <div class="about-copy">
+          <p>I studied in the Fusion STEM cohort at St. George’s in Vancouver and now study electrical engineering in the co-op program at the University of Waterloo. I like projects that let me connect software to something physical and see how it behaves once I turn it on.</p>
+          <p>Building a two-player arcade cabinet meant getting the controls, software, and enclosure to work together. Testing a twin-motor submarine in a bathtub raised different questions about balance and sealing. I enjoy that part of a build, when a test shows me what to change for the next version.</p>
+          <p>Outside my own builds, I enjoy helping younger students try engineering for themselves. Developing hands-on workshops taught me to break a concept into something a student can build, test, and explain back in their own words.</p>
         </div>
       </div>
     </section>
@@ -77,11 +71,24 @@
               <li><a href="https://www.linkedin.com/in/jeffrey-lee-b15497322/">LinkedIn</a></li>
             </ul>
           </div>
-          <a class="button" href="assets/jeffrey-lee-resume.pdf" download="Resume - Jeffrey Lee.pdf">Download original résumé (PDF)</a>
+          <div class="resume-actions">
+            <a class="button" href="assets/jeffrey-lee-resume.pdf" target="_blank" rel="noopener">Open résumé PDF (new tab)</a>
+            <a class="text-link" href="assets/jeffrey-lee-resume.pdf" download="Resume - Jeffrey Lee.pdf">Download PDF</a>
+          </div>
         </div>
 
-        <div class="resume-grid">
-          <div class="resume-sidebar">
+        <div class="resume-body">
+          <div class="resume-group">
+            <h3>Technical Skills &amp; Certifications</h3>
+            <dl class="experience">
+              <div><dt>Hardware tools</dt><dd>Arduino microcontrollers, Raspberry Pi, soldering, 3D printing, and laser cutters</dd></div>
+              <div><dt>Software tools</dt><dd>Onshape CAD, KiCad schematic capture and PCB layout, Microsoft Excel, PowerPoint, and Project, and microcontroller programming</dd></div>
+              <div><dt>Software development</dt><dd>C++, Python, Java, HTML/CSS, and JavaScript</dd></div>
+              <div><dt>Certifications</dt><dd>Standard First Aid &amp; CPR C, National Lifeguard, and FoodSafe</dd></div>
+            </dl>
+          </div>
+
+          <div class="resume-group">
             <h3>Education</h3>
             <dl class="experience">
               <div>
@@ -95,17 +102,9 @@
                 <dd>High School Diploma, Fusion STEM Cohort. Graduated with distinction with a 96.0% GPA.</dd>
               </div>
             </dl>
-
-            <h3>Technical Skills &amp; Certifications</h3>
-            <dl class="experience">
-              <div><dt>Hardware tools</dt><dd>Arduino microcontrollers, Raspberry Pi, soldering, 3D printing, and laser cutters</dd></div>
-              <div><dt>Software tools</dt><dd>Onshape CAD, KiCad schematic capture and PCB layout, Microsoft Excel, PowerPoint, and Project, and microcontroller programming</dd></div>
-              <div><dt>Software development</dt><dd>C++, Python, Java, HTML/CSS, and JavaScript</dd></div>
-              <div><dt>Certifications</dt><dd>Standard First Aid &amp; CPR C, National Lifeguard, and FoodSafe</dd></div>
-            </dl>
           </div>
 
-          <div>
+          <div class="resume-group">
             <h3>Experience</h3>
             <dl class="experience">
               <div>
@@ -129,7 +128,9 @@
                 <dd>Led daily outdoor and recreational activities over a nine-week season while maintaining child care safety standards and managing activity setup, risk assessment, and daily schedules.</dd>
               </div>
             </dl>
+          </div>
 
+          <div class="resume-group">
             <h3>Engineering Projects</h3>
             <dl class="experience">
               <div>
@@ -153,7 +154,7 @@
                 <dd>Led a student team in rapidly designing and empirically testing physical devices and experimental apparatus under strict time, resource, and technical constraints.</dd>
               </div>
               <div>
-                <dt>SHAD Engineering Design Challenge · Waterloo</dt>
+                <dt>SHAD Engineering Design Challenge · University of Waterloo</dt>
                 <dd>Collaborated on engineering prototypes, commercial business plans, and scalable solutions to transportation challenges for Canadian students during a month-long STEAM challenge.</dd>
               </div>
             </dl>
