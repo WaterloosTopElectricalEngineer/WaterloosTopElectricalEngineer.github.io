@@ -28,10 +28,9 @@ nav a:hover { text-decoration: underline; }
 .brand { font-weight: 760; letter-spacing: -.035em; font-size: 1rem; }
 .nav-links { flex: 1 1 32rem; justify-content: space-between; max-width: 43rem; gap: .3rem 1rem; font-size: .9375rem; }
 .nav-links a { padding-block: .25rem; }
-.intro { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) max-content; column-gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
 .intro h1 { font-size: clamp(2.25rem, 5vw, 4.6rem); max-width: 20ch; }
-.intro-copy { grid-area: 1 / 2; }
-.intro .actions { grid-area: 1 / 1; display: grid; gap: .55rem; margin: 0; }
+.intro .actions { display: grid; justify-self: end; gap: .55rem; margin: 0; }
 .intro .actions a { text-align: center; font-size: .9375rem; }
 .intro .actions .secondary { background: white; color: var(--ink); border: 1px solid var(--ink); }
 .intro .actions .secondary:hover { background: #f1f1f1; }
@@ -45,7 +44,7 @@ h3 { line-height: 1.17; letter-spacing: -.035em; }
 .button:hover { background: #235fa1; }
 .text-link { color: var(--accent); font-weight: 650; }
 .projects { padding-bottom: clamp(3rem, 7vw, 6rem); }
-.projects h2 { font: 500 .875rem/1.45 ui-monospace, monospace; margin-bottom: .8rem; text-align: right; text-transform: uppercase; letter-spacing: 0; }
+.projects h2 { font: 500 .875rem/1.45 ui-monospace, monospace; margin-bottom: .8rem; text-align: center; text-transform: uppercase; letter-spacing: 0; }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.3rem .75rem; }
 .card a { display: block; text-decoration: none; }
 .card a:hover h3 { text-decoration: underline; }
@@ -63,38 +62,39 @@ h3 { line-height: 1.17; letter-spacing: -.035em; }
 .photo-strip.submarine { grid-template-columns: .8fr 1.2fr; }
 .submarine img:last-child { object-position: 25% center; }
 .cover.fixit { object-position: center 35%; }
-.card-copy { display: flex; flex-direction: column; padding-top: .8rem; }
+.card-copy { display: flex; text-align: center; flex-direction: column; padding-top: .8rem; }
 .card-copy .eyebrow { order: 1; color: var(--muted); margin-top: .35rem; }
 .card h3 { font-size: 1rem; text-transform: uppercase; font-weight: 650; letter-spacing: 0; margin-bottom: .25rem; }
 .card-copy > p:last-child, .about p, .experience dd, .project-copy p { color: var(--muted); }
 .about { background: #f5f5f5; padding-block: clamp(3rem, 6vw, 5rem); }
 .detail-grid, .leadership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 5vw, 4.5rem); }
-.about h2 { margin-bottom: 1rem; }
-.about-layout { display: grid; grid-template-columns: minmax(0, 68ch) minmax(0, 18rem); align-items: center; gap: clamp(1.5rem, 5vw, 4rem); }
+.about h2 { margin-bottom: 1rem; text-align: center; }
+.about-layout { display: grid; grid-template-columns: minmax(0, 68ch) minmax(0, 18rem); justify-content: center; align-items: center; gap: clamp(1.5rem, 5vw, 4rem); }
 .about-copy { max-width: 68ch; }
-.about-portrait { width: 100%; height: auto; max-width: 18rem; }
+.about-portrait { justify-self: center; width: 100%; height: auto; max-width: 18rem; }
 .about-copy p + p { margin-top: .75rem; }
 .experience div { border-top: 1px solid #dedede; padding-block: .65rem; }
 .experience dt { font-weight: 700; }
 .tags { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .45rem; }
 .tags li { font-size: .875rem; padding: .2rem .55rem; border: 1px solid #d5d5d5; }
 .leadership { padding-block: clamp(3rem, 6vw, 5rem); }
-.leadership h2 { margin-bottom: 1.75rem; }
+.leadership h2 { margin-bottom: 1.75rem; text-align: center; }
 .leadership h3 { margin-bottom: .65rem; }
 .leadership .experience + h3 { margin-top: 1.65rem; }
 .role-date { font-size: .875rem; margin-bottom: .2rem; }
 .resume { padding-block: clamp(3rem, 6vw, 5rem); border-bottom: 1px solid var(--line); }
-.resume-header { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: 1rem 2rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--line); }
+.resume-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; flex-direction: column; gap: 1rem 2rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--line); }
 .resume h2 { margin-bottom: .75rem; }
 .resume-name { font-size: 1.2rem; font-weight: 700; }
-.resume-contact { display: flex; flex-wrap: wrap; gap: .35rem 1rem; list-style: none; padding: 0; margin: .5rem 0 0; overflow-wrap: anywhere; }
+.resume-contact { display: flex; justify-content: center; flex-wrap: wrap; gap: .35rem 1rem; list-style: none; padding: 0; margin: .5rem 0 0; overflow-wrap: anywhere; }
 .resume h3 { margin-bottom: .7rem; }
-.resume-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1.2rem; }
-.resume-body { max-width: 76ch; margin-top: 1.5rem; }
+.resume-actions { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; gap: .65rem 1.2rem; }
+.resume-body { max-width: 76ch; margin: 1.5rem auto 0; }
 .resume-group + .resume-group { margin-top: 1.65rem; }
 .resume .experience div { padding-block: .85rem; }
 footer { padding-block: 2.5rem; background: #111; color: white; }
-.footer-flex { justify-content: space-between; }
+.footer-flex { justify-content: center; text-align: center; }
+.footer-flex .actions { justify-content: center; }
 footer h2 { margin-bottom: .6rem; }
 footer .actions { margin-top: 0; }
 footer .button { background: transparent; border: 1px solid #c4d8e9; }
@@ -111,8 +111,8 @@ footer .button:hover { background: #254867; }
   main:has(.intro) .wrap { width: calc(100% - 1.5rem); }
   .nav-links { max-width: none; }
   .intro { grid-template-columns: minmax(0, 1fr); row-gap: 1rem; }
-  .intro-copy, .intro .actions { grid-area: auto; }
-  .intro .actions { display: flex; }
+  .intro .actions { display: flex; justify-self: end; }
+  .about-copy { margin-inline: auto; }
   .project-grid, .detail-grid, .leadership-grid, .about-layout { grid-template-columns: 1fr; }
 }
 @media (max-width: 28rem) {
