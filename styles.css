@@ -48,7 +48,7 @@ h3 { line-height: 1.17; letter-spacing: -.035em; }
 .projects { padding-bottom: clamp(3rem, 7vw, 6rem); }
 .projects h2 { font: 500 .875rem/1.45 ui-monospace, monospace; margin-bottom: .8rem; text-align: center; text-transform: uppercase; letter-spacing: 0; }
 .projects-demos { margin-bottom: 1.25rem; text-align: center; }
-.projects-note { display: grid; place-items: center; align-self: start; aspect-ratio: 1.53; padding: 1rem; border: 1px dashed var(--line); text-align: center; color: var(--muted); }
+.projects-note { display: grid; place-items: center; align-self: start; aspect-ratio: 1.53; padding: 1rem; border: 1px dashed var(--line); text-align: center; font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 700; color: var(--muted); }
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.3rem .75rem; }
 .card a { display: block; text-decoration: none; }
 .card a:hover h3 { text-decoration: underline; }
