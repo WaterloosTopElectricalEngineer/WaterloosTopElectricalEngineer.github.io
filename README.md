@@ -9,4 +9,4 @@ Open `index.html` to preview the website. The site uses plain HTML and CSS with 
 3. Open **Settings → Pages**. Set **Source** to **Deploy from a branch**, choose **main** and **/(root)**, then click **Save**.
 4. When the deployment succeeds, open the address shown under **Settings → Pages**. That is the link to send to employers.
 
-Edit `index.html` to update the homepage and the individual project HTML files to update case studies. Replace `assets/jeffrey-lee-resume.pdf` to update the downloadable résumé.
+Edit `index.html` to update the homepage and résumé section. Edit the individual project HTML files to update case studies.
