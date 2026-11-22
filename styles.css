@@ -28,6 +28,7 @@ nav a:hover { text-decoration: underline; }
 .brand { font-weight: 760; letter-spacing: -.035em; font-size: 1rem; }
 .nav-links { flex: 1 1 32rem; justify-content: space-between; max-width: 43rem; gap: .3rem 1rem; font-size: .9375rem; }
 .nav-links a { padding-block: .25rem; }
+.home-link, .sidebar-social { display: none; }
 .intro { display: grid; grid-template-columns: minmax(0, max-content) minmax(max-content, 1fr); column-gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: clamp(1.25rem, 3vw, 2.25rem) clamp(1.75rem, 4vw, 3rem); }
 .intro h1 { font-size: clamp(2.25rem, 5vw, 4.6rem); max-width: 20ch; }
 .intro .actions { display: grid; justify-self: center; gap: .55rem; margin: 0; }
@@ -118,4 +119,54 @@ footer .button:hover { background: #254867; }
 @media (max-width: 28rem) {
   .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .nav-links a:last-child { grid-column: 2; }
+}
+
+
+@media (min-width: 64rem) {
+  body {
+    --sidebar-width: clamp(14rem, 15.75vw, 18.75rem);
+    padding-left: var(--sidebar-width);
+  }
+  .top {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1;
+    width: var(--sidebar-width);
+    overflow-y: auto;
+    background: var(--paper);
+    border: 0;
+    border-right: 1px solid var(--line);
+  }
+  .top nav.wrap {
+    width: 100%;
+    min-height: 100%;
+    padding: 1.45rem clamp(1.5rem, 2.6vw, 3.15rem);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .top .brand {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+  .nav-links {
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .65rem;
+    font-size: 1.05rem;
+    margin-block: 3rem 1.5rem;
+  }
+  .nav-links a { padding-block: .42rem; }
+  .home-link { display: block; }
+  .sidebar-social {
+    display: block;
+    align-self: flex-start;
+    margin-top: auto;
+    padding-block: .45rem;
+    text-decoration: underline;
+  }
+  main:has(.intro) { border-left: 0; margin-left: 0; }
 }
