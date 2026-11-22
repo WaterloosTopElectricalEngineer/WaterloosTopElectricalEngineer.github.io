@@ -26,10 +26,8 @@ nav { min-height: 3.4rem; justify-content: space-between; padding-block: .75rem;
 nav a { text-decoration: none; }
 nav a:hover { text-decoration: underline; }
 .brand { font-weight: 760; letter-spacing: -.035em; font-size: 1rem; }
-.menu { position: relative; z-index: 1; }
-.menu summary { cursor: pointer; list-style: none; padding: .35rem 0 .35rem .75rem; font-size: .9375rem; }
-.menu summary::-webkit-details-marker { display: none; }
-.nav-links { position: absolute; right: 0; top: calc(100% + .35rem); min-width: 10rem; display: grid; gap: .5rem; padding: .85rem 1rem; background: white; border: 1px solid var(--line); box-shadow: 0 .4rem 1.2rem #0001; }
+.nav-links { flex: 1 1 27rem; justify-content: space-between; max-width: 38rem; gap: .3rem 1rem; font-size: .9375rem; }
+.nav-links a { padding-block: .25rem; }
 .intro { padding-block: 1.85rem 4.8rem; }
 .intro .actions { margin-top: clamp(1.9rem, 5.3vw, 4.15rem); gap: .85rem; }
 .intro .actions a { padding: .2rem .4rem; background: transparent; color: var(--ink); border-bottom: 1px solid var(--ink); text-decoration: none; font-size: .9375rem; font-weight: 500; }
@@ -67,13 +65,18 @@ h3 { line-height: 1.17; letter-spacing: -.035em; }
 .card h3 { font-size: 1rem; text-transform: uppercase; font-weight: 650; letter-spacing: 0; margin-bottom: .25rem; }
 .card-copy > p:last-child, .about p, .experience dd, .project-copy p { color: var(--muted); }
 .about { background: #f5f5f5; padding-block: clamp(3rem, 6vw, 5rem); }
-.about-grid, .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 5vw, 4.5rem); }
+.about-grid, .detail-grid, .leadership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 5vw, 4.5rem); }
 .about h2, .about h3 { margin-bottom: .9rem; }
 .about p + h3 { margin-top: 1.45rem; }
 .experience div { border-top: 1px solid #dedede; padding-block: .65rem; }
 .experience dt { font-weight: 700; }
 .tags { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .45rem; }
 .tags li { font-size: .875rem; padding: .2rem .55rem; border: 1px solid #d5d5d5; }
+.leadership { padding-block: clamp(3rem, 6vw, 5rem); }
+.leadership h2 { margin-bottom: 1.75rem; }
+.leadership h3 { margin-bottom: .65rem; }
+.leadership .experience + h3 { margin-top: 1.65rem; }
+.role-date { font-size: .875rem; margin-bottom: .2rem; }
 footer { padding-block: 2.5rem; background: #111; color: white; }
 .footer-flex { justify-content: space-between; }
 footer h2 { margin-bottom: .6rem; }
@@ -91,6 +94,10 @@ footer .button:hover { background: #254867; }
 @media (max-width: 43rem) {
   .wrap { width: calc(100% - 2rem); }
   main:has(.intro) .wrap { width: calc(100% - 1.5rem); }
+  .nav-links { max-width: none; }
   .intro { padding-bottom: 2.75rem; }
-  .project-grid, .about-grid, .detail-grid { grid-template-columns: 1fr; }
+  .project-grid, .about-grid, .detail-grid, .leadership-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 28rem) {
+  .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
