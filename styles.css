@@ -70,7 +70,9 @@ h3 { line-height: 1.17; letter-spacing: -.035em; }
 .about { background: #f5f5f5; padding-block: clamp(3rem, 6vw, 5rem); }
 .detail-grid, .leadership-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 5vw, 4.5rem); }
 .about h2 { margin-bottom: 1rem; }
+.about-layout { display: grid; grid-template-columns: minmax(0, 68ch) minmax(0, 18rem); align-items: center; gap: clamp(1.5rem, 5vw, 4rem); }
 .about-copy { max-width: 68ch; }
+.about-portrait { width: 100%; height: auto; max-width: 18rem; }
 .about-copy p + p { margin-top: .75rem; }
 .experience div { border-top: 1px solid #dedede; padding-block: .65rem; }
 .experience dt { font-weight: 700; }
@@ -111,7 +113,7 @@ footer .button:hover { background: #254867; }
   .intro { grid-template-columns: minmax(0, 1fr); row-gap: 1rem; }
   .intro-copy, .intro .actions { grid-area: auto; }
   .intro .actions { display: flex; }
-  .project-grid, .detail-grid, .leadership-grid { grid-template-columns: 1fr; }
+  .project-grid, .detail-grid, .leadership-grid, .about-layout { grid-template-columns: 1fr; }
 }
 @media (max-width: 28rem) {
   .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
