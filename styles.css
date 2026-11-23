@@ -109,7 +109,10 @@ footer .button:hover { background: #254867; }
 .detail { padding-block: 2.5rem 5rem; }
 .detail header { margin-top: 2rem; }
 .detail h1 { font-size: clamp(3rem, 7vw, 6rem); max-width: 16ch; }
+.detail-grid { align-items: start; }
 .detail .media { aspect-ratio: 4 / 3; }
+.detail .project-copy h2 { font-size: clamp(1.35rem, 2vw, 1.75rem); margin-bottom: .5rem; }
+.detail .project-copy p + h2 { margin-top: 1.5rem; }
 .detail .project-copy p + p { margin-top: .85rem; }
 .metrics { display: flex; gap: 1.3rem; margin-block: 1rem; }
 .metrics dd { font-size: 1.5rem; font-weight: 700; }

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Jeffrey Lee, Electrical Engineering co-op student at the University of Waterloo. Explore my projects in electronics, embedded systems, and fabrication.">
   <title>Allergen Detector Prototype | Jeffrey Lee</title>
-  <link rel="stylesheet" href="styles.css?v=26">
+  <link rel="stylesheet" href="styles.css?v=29">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -27,9 +27,14 @@
             <img src="assets/coffee.webp" alt="Prototype screen displaying Coffee" width="665" height="595" loading="lazy">
             <img src="assets/chili.webp" alt="Prototype screen displaying the chili powder prediction" width="641" height="613" loading="lazy">
             <img src="assets/cashew.webp" alt="Prototype screen displaying Cashew" width="657" height="633" loading="lazy">
-          </div></div><div class="project-copy"><p>I built an Arduino prototype to explore whether low-cost gas sensors could distinguish foods from their volatile compounds. I collected sample readings and displayed predictions on a screen in a 3D-printed enclosure.</p>
-            <p>Research into direct allergen detection led me to focus the prototype on classifying food samples.</p>
-            <ul class="tags" aria-label="Tools used"><li>Arduino</li><li>C++</li><li>Gas sensors</li><li>3D printing</li></ul>
+          </div></div><div class="project-copy">
+            <h2>Why I built it</h2>
+            <p>I have several food allergies. The day before I started looking into this project, I had an allergic reaction that sent me to the hospital. I wanted to build something that might help me recognize a food I react to before taking a bite.</p>
+            <p>The direct allergen detection methods I found relied on advanced chemical analysis. That led me to a simpler question. Some nuts I’m allergic to have a smell I recognize before I eat them. Could a set of gas sensors pick up a recognizable pattern in the airborne compounds behind those smells?</p>
+            <h2>How the prototype worked</h2>
+            <p>I combined three Seeed Studio gas sensors to cover a wider range of airborne compounds. I collected readings from known food samples and used the combined sensor responses to look for patterns that could distinguish samples. A Wio Terminal displayed the predicted food label, and I housed the electronics in a 3D-printed enclosure.</p>
+            <p>The prototype tested food classification from sensor readings. It couldn’t verify whether a food contained an allergen or was safe to eat.</p>
+            <ul class="tags" aria-label="Tools used"><li>Arduino</li><li>C++</li><li>Seeed Studio gas sensors</li><li>Wio Terminal</li><li>3D printing</li></ul>
             <div class="actions">
               <iframe class="youtube-demo" src="https://www.youtube-nocookie.com/embed/qEO2oYRJZdA" title="Allergen Detector Prototype demonstration" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
               <a class="text-link" href="https://youtu.be/qEO2oYRJZdA" target="_blank" rel="noopener">Watch the demo on YouTube</a>

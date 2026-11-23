@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Jeffrey Lee, Electrical Engineering co-op student at the University of Waterloo. Explore my projects in electronics, embedded systems, and fabrication.">
   <title>Automatic Light Switch | Jeffrey Lee</title>
-  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="stylesheet" href="styles.css?v=29">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -23,7 +23,11 @@
     <main class="wrap detail" id="main">
     <a class="text-link" href="./#projects">All projects</a>
     <header><p class="eyebrow">Home automation</p><h1>Automatic Light Switch</h1></header>
-    <div class="detail-grid"><div class="media"><img class="cover" src="assets/light-switch.webp" alt="Arduino light switch prototype with an ultrasonic sensor, servo, and jumper wires" width="1440" height="1080" loading="lazy"></div><div class="project-copy"><p>I built a prototype that uses an ultrasonic sensor and a sound sensor to monitor the room. An Arduino interprets those inputs and drives a servo that physically operates the switch. A Bluetooth module adds wireless communication.</p>
-            <ul class="tags" aria-label="Tools used"><li>Arduino</li><li>Ultrasonic sensing</li><li>Servo motor</li><li>Bluetooth</li></ul>
+    <div class="detail-grid"><div class="media"><img class="cover" src="assets/light-switch.webp" alt="Arduino light switch prototype with an ultrasonic sensor, servo, and jumper wires" width="1440" height="1080" loading="lazy"></div><div class="project-copy">
+            <h2>Counting people at the door</h2>
+            <p>I lined up two ultrasonic sensors along the doorway. The Arduino used the order in which they detected someone to tell whether that person was entering or leaving. It added one to the room count on entry and subtracted one on exit, so a single person leaving wouldn’t register the room as empty while others were still inside.</p>
+            <h2>Automatic shutoff and remote control</h2>
+            <p>We added a sound sensor to monitor the room for activity. After a period of quiet, the system could send the servo to rotate and flip the existing light switch off. I also added a Bluetooth module so someone could turn the lights on or off remotely from bed using the same servo.</p>
+            <ul class="tags" aria-label="Tools used"><li>Arduino</li><li>Ultrasonic sensors</li><li>Sound sensor</li><li>Servo motor</li><li>Bluetooth</li></ul>
           </div></div>
     </main></body></html>
