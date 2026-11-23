@@ -111,6 +111,9 @@ footer .button:hover { background: #254867; }
 .detail h1 { font-size: clamp(3rem, 7vw, 6rem); max-width: 16ch; }
 .detail-grid { align-items: start; }
 .detail .media { aspect-ratio: 4 / 3; }
+.project-photos figure { margin: 1rem 0 0; }
+.project-photos figure img { height: auto; }
+.project-photos figcaption { margin-top: .45rem; color: var(--muted); font-size: .9375rem; }
 .detail .project-copy h2 { font-size: clamp(1.35rem, 2vw, 1.75rem); margin-bottom: .5rem; }
 .detail .project-copy p + h2 { margin-top: 1.5rem; }
 .detail .project-copy p + p { margin-top: .85rem; }

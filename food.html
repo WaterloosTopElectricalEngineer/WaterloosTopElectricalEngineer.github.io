@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Jeffrey Lee, Electrical Engineering co-op student at the University of Waterloo. Explore my projects in electronics, embedded systems, and fabrication.">
   <title>Allergen Detector Prototype | Jeffrey Lee</title>
-  <link rel="stylesheet" href="styles.css?v=29">
+  <link rel="stylesheet" href="styles.css?v=30">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -23,16 +23,24 @@
     <main class="wrap detail" id="main">
     <a class="text-link" href="./#projects">All projects</a>
     <header><p class="eyebrow">Sensors &amp; embedded systems</p><h1>Allergen Detector Prototype</h1></header>
-    <div class="detail-grid"><div class="media"><div class="photo-strip">
+    <div class="detail-grid">
+      <div class="project-photos">
+        <div class="media"><div class="photo-strip">
             <img src="assets/coffee.webp" alt="Prototype screen displaying Coffee" width="665" height="595" loading="lazy">
             <img src="assets/chili.webp" alt="Prototype screen displaying the chili powder prediction" width="641" height="613" loading="lazy">
             <img src="assets/cashew.webp" alt="Prototype screen displaying Cashew" width="657" height="633" loading="lazy">
-          </div></div><div class="project-copy">
+        </div></div>
+        <figure>
+          <img src="assets/allergen-terminal-sensors.webp" alt="Wio Terminal wired to three separate gas sensors on a work surface" width="1440" height="1007" loading="lazy">
+          <figcaption>The Wio Terminal and three gas sensors before I fitted them into the enclosure.</figcaption>
+        </figure>
+      </div>
+      <div class="project-copy">
             <h2>Why I built it</h2>
             <p>I have several food allergies. The day before I started looking into this project, I had an allergic reaction that sent me to the hospital. I wanted to build something that might help me recognize a food I react to before taking a bite.</p>
             <p>The direct allergen detection methods I found relied on advanced chemical analysis. That led me to a simpler question. Some nuts I’m allergic to have a smell I recognize before I eat them. Could a set of gas sensors pick up a recognizable pattern in the airborne compounds behind those smells?</p>
             <h2>How the prototype worked</h2>
-            <p>I combined three Seeed Studio gas sensors to cover a wider range of airborne compounds. I collected readings from known food samples and used the combined sensor responses to look for patterns that could distinguish samples. A Wio Terminal displayed the predicted food label, and I housed the electronics in a 3D-printed enclosure.</p>
+            <p>I combined three Seeed Studio gas sensors to cover a wider range of airborne compounds. I collected readings from known food samples and used the combined sensor responses to look for patterns that could distinguish samples. The Wio Terminal displayed the predicted food label. I 3D-printed an enclosure to hold the terminal and sensors together.</p>
             <p>The prototype tested food classification from sensor readings. It couldn’t verify whether a food contained an allergen or was safe to eat.</p>
             <ul class="tags" aria-label="Tools used"><li>Arduino</li><li>C++</li><li>Seeed Studio gas sensors</li><li>Wio Terminal</li><li>3D printing</li></ul>
             <div class="actions">
