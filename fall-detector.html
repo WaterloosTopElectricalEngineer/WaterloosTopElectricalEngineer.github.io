@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="From breadboard to custom PCB, see how our ESP32 fall detector sounds a warning and emails care staff.">
   <title>Wearable Fall Detector | Jeffrey Lee</title>
-  <link rel="stylesheet" href="styles.css?v=27">
+  <link rel="stylesheet" href="styles.css?v=28">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -33,6 +33,10 @@
         <div>
           <p>We wired an MMA7361 accelerometer, an ESP32-C3 SuperMini, an active buzzer, and a push button on a breadboard. The accelerometer measures motion along three axes. The ESP32 reads those signals and starts an alert when its firmware detects a possible fall.</p>
           <p>A double press starts a manual SOS. In either mode, the buzzer sounds during a short countdown so the wearer has time to double-press the same button to cancel a false alarm.</p>
+          <figure class="build-photo">
+            <img src="assets/fall-detector-breadboard.webp" alt="ESP32, accelerometer, buzzer, and push button connected by jumper wires on a breadboard" width="960" height="1280" loading="lazy">
+            <figcaption>The breadboard prototype let us test fall detection, the buzzer, and the SOS button before making a PCB.</figcaption>
+          </figure>
         </div>
       </section>
       <section class="build-stage">
@@ -40,6 +44,10 @@
         <div>
           <p>The device itself needed to withstand falls. A drop could loosen the breadboard’s jumper wires, so I designed a custom printed circuit board in KiCad. Copper traces replaced the jumper wires, and the parts could be soldered in place.</p>
           <p>I placed the buzzer away from the accelerometer to reduce the risk of interference affecting sensor readings. I also used a transistor and resistor to switch the buzzer without drawing its operating current through an ESP32 output pin.</p>
+          <figure class="build-photo">
+            <img src="assets/fall-detector-bare-pcb.webp" alt="Bare green circuit board with labeled footprints and through-holes" width="720" height="1280" loading="lazy">
+            <figcaption>The fabricated PCB before the components were soldered in place.</figcaption>
+          </figure>
         </div>
       </section>
       <section class="build-stage">
@@ -47,6 +55,10 @@
         <div>
           <p>With the components soldered onto the board, we tested the sensor, buzzer, and button together. If the countdown expires, the ESP32 uses its built-in Wi-Fi to send an HTTPS request to our backend. The backend logs the alert and emails care staff with the device ID.</p>
           <p>We wrote the firmware in C++ with the Arduino framework. The backend ran on Google Cloud and used Go and SQLite to verify each device’s ID and API key. We tested the API and email delivery separately, then exercised the full alert flow on the hardware.</p>
+          <figure class="build-photo">
+            <img src="assets/fall-detector-assembled.webp" alt="Assembled PCB with the ESP32 in the center, the buzzer and push button to the left, and the accelerometer to the right" width="960" height="1280" loading="lazy">
+            <figcaption>The assembled fall detector, with the buzzer and accelerometer on opposite sides of the board.</figcaption>
+          </figure>
         </div>
       </section>
       <section class="build-stage">
