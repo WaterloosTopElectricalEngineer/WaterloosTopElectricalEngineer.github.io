@@ -188,3 +188,8 @@ footer .button:hover { background: #254867; }
   }
   main:has(.intro) { border-left: 0; margin-left: 0; }
 }
+
+.card > a[href="bionic-butterfly.html"] img { object-position: center 46%; }
+.butterfly-detail { align-items: start; }
+.butterfly-detail video { display: block; width: 100%; max-width: 22rem; height: auto; margin-inline: auto; }
+.butterfly-detail h2 { font-size: 1.4rem; margin-block: 1.25rem .5rem; }

@@ -26,15 +26,21 @@
       <p class="eyebrow">Embedded systems &amp; mechanical design</p>
       <h1>ESP32-Controlled Bionic Butterfly</h1>
     </header>
-    <div class="project-copy resume-body">
+    <div class="detail-grid butterfly-detail">
+      <video controls playsinline preload="none" poster="assets/bionic-butterfly.webp" width="480" height="854" aria-label="Handheld demonstration of the bionic butterfly’s flapping wings">
+        <source src="assets/bionic-butterfly-demo.mp4" type="video/mp4">
+        <a href="assets/bionic-butterfly-demo.mp4">Watch the butterfly demo</a>
+      </video>
+      <div class="project-copy">
       <p>I built a remotely controlled prototype to explore how a mechanical wing assembly could reproduce the flapping motion of a butterfly.</p>
       <h2>Frame and wings</h2>
-      <p>I used a 3D-printed frame to mount the electronics and servos. Carbon-fiber rods formed the lightweight wing structure, and thin plastic membranes made up the wing surfaces.</p>
+      <p>I used a 3D-printed frame to mount the electronics and servos. I arranged carbon-fiber rods to form each wing’s outline and internal supports, then secured a thin plastic membrane over each framework to create a large wing surface with little added weight.</p>
       <h2>Flapping mechanism</h2>
-      <p>Two high-speed servos drove the mechanical wing assemblies. An ESP32 translated remote commands into servo motion, bringing the wing structure, electronics, and controls together in one prototype.</p>
+      <p>Two high-speed servos drove the mechanical wing assemblies. An ESP32 translated remote commands into servo motion, producing repeated flapping strokes. The handheld demo shows how the wings move through those strokes.</p>
       <ul class="tags" aria-label="Tools used">
         <li>ESP32</li><li>High-speed servos</li><li>3D printing</li><li>Carbon fiber</li>
       </ul>
+      </div>
     </div>
     </main>
 </body>
