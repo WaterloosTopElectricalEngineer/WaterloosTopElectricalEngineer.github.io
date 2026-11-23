@@ -44,6 +44,14 @@
         <div>
           <p>The device itself needed to withstand falls. A drop could loosen the breadboard’s jumper wires, so I designed a custom printed circuit board in KiCad. Copper traces replaced the jumper wires, and the parts could be soldered in place.</p>
           <p>I placed the buzzer away from the accelerometer to reduce the risk of interference affecting sensor readings. I also used a transistor and resistor to switch the buzzer without drawing its operating current through an ESP32 output pin.</p>
+          <figure>
+            <img src="assets/fall-detector-kicad-schematic.png" alt="KiCad schematic connecting the ESP32-C3 to the MMA7361 accelerometer, SOS button, and transistor-driven buzzer" width="1207" height="738" loading="lazy">
+            <figcaption>The KiCad schematic shows how the ESP32 reads the accelerometer and button, and controls the buzzer through a transistor.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/fall-detector-kicad-layout.png" alt="KiCad board layout with the ESP32 footprint in the center, accelerometer headers on the left, and buzzer on the right" width="1223" height="778" loading="lazy">
+            <figcaption>The routed PCB layout places the accelerometer and buzzer on opposite sides of the board.</figcaption>
+          </figure>
           <figure class="build-photo">
             <img src="assets/fall-detector-bare-pcb.webp" alt="Bare green circuit board with labeled footprints and through-holes" width="720" height="1280" loading="lazy">
             <figcaption>The fabricated PCB before the components were soldered in place.</figcaption>
