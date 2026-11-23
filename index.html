@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="Jeffrey Lee, Electrical Engineering co-op student at the University of Waterloo. Explore my projects in electronics, embedded systems, and fabrication.">
   <title>Jeffrey | Electrical Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="styles.css?v=27">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -28,6 +28,15 @@
       <p class="projects-demos"><a class="button" href="https://www.youtube.com/channel/UCpjI07qal1ZuxE7JQ_b9MCw" target="_blank" rel="noopener">Watch live project demos on YouTube</a></p>
       <div class="project-grid">
       <!-- Add new project cards at the start of this grid. -->
+      <article class="card">
+        <a class="fall-detector-card" href="fall-detector.html">
+          <div class="card-copy">
+            <p class="eyebrow">Embedded systems &amp; PCB design</p>
+            <h3>Wearable Fall Detector</h3>
+            <p>An ESP32 prototype that sounds a warning after a detected fall and emails care staff if the alert goes uncanceled.</p>
+          </div>
+        </a>
+      </article>
       <article class="card"><a href="bionic-butterfly.html">
         <div class="media"><img src="assets/bionic-butterfly-assembled.webp" alt="Assembled bionic butterfly with transparent wings spread across a worktable" width="1317" height="907" loading="lazy"></div>
         <div class="card-copy">
@@ -127,7 +136,7 @@
             <h3>Engineering Projects</h3>
             <dl class="experience">
               <div>
-                <dt>Wearable Fall Detection &amp; Emergency Alert System</dt>
+                <dt><a href="fall-detector.html">Wearable Fall Detection &amp; Emergency Alert System</a></dt>
                 <dd>Designed a custom PCB in KiCad with an ESP32-C3 SuperMini, an MMA7361 accelerometer, a buzzer, and an SOS button. Integrated Wi-Fi and HTTPS requests with a cloud backend to send email alerts to caregivers, with audible warnings and manual cancellation for false alarms.</dd>
               </div>
               <div>
