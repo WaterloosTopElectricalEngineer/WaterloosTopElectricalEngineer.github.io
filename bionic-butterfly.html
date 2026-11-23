@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Jeffrey Lee, Electrical Engineering co-op student at the University of Waterloo. Explore my projects in electronics, embedded systems, and fabrication.">
+  <meta name="description" content="See how we built a bionic butterfly with an ESP32, two servos, and flexible carbon-fiber wings.">
   <title>ESP32-Controlled Bionic Butterfly | Jeffrey Lee</title>
-  <link rel="stylesheet" href="styles.css?v=15">
+  <link rel="stylesheet" href="styles.css?v=16">
 </head>
 <body><a class="skip" href="#main">Skip to content</a><header class="top"><nav class="wrap" aria-label="Main navigation">
 <a class="brand" href="./">Jeffrey Lee</a>
@@ -26,22 +26,34 @@
       <p class="eyebrow">Embedded systems &amp; mechanical design</p>
       <h1>ESP32-Controlled Bionic Butterfly</h1>
     </header>
-    <div class="detail-grid butterfly-detail">
-      <video controls playsinline preload="none" poster="assets/bionic-butterfly.webp" width="480" height="854" aria-label="Handheld demonstration of the bionic butterfly’s flapping wings">
-        <source src="assets/bionic-butterfly-demo.mp4" type="video/mp4">
-        <a href="assets/bionic-butterfly-demo.mp4">Watch the butterfly demo</a>
-      </video>
-      <div class="project-copy">
-      <p>I built a remotely controlled prototype to explore how a mechanical wing assembly could reproduce the flapping motion of a butterfly.</p>
-      <h2>Frame and wings</h2>
-      <p>I used a 3D-printed frame to mount the electronics and servos. I arranged carbon-fiber rods to form each wing’s outline and internal supports, then secured a thin plastic membrane over each framework to create a large wing surface with little added weight.</p>
-      <h2>Flapping mechanism</h2>
-      <p>Two high-speed servos drove the mechanical wing assemblies. An ESP32 translated remote commands into servo motion, producing repeated flapping strokes. The handheld demo shows how the wings move through those strokes.</p>
-      <ul class="tags" aria-label="Tools used">
-        <li>ESP32</li><li>High-speed servos</li><li>3D printing</li><li>Carbon fiber</li>
-      </ul>
-      </div>
-    </div>
+    <article class="butterfly-build" aria-label="How we built the butterfly">
+      <p class="build-intro">We built a remote-controlled butterfly to explore how a pair of small motors could move wings much larger than the body that carries them.</p>
+      <section class="build-stage">
+        <h2>The electronics</h2>
+        <div>
+          <p>We mounted an ESP32, a battery, and two high-speed servos in a 3D-printed frame. The ESP32 received commands from the remote and controlled the angle of each servo arm. Those arms would eventually drive the wings.</p>
+        </div>
+      </section>
+      <section class="build-stage">
+        <h2>Building and testing the wings</h2>
+        <div>
+          <p>We bent carbon-fiber rods to outline the wings and added rods across each wing as ribs. We then stretched a thin plastic membrane across each frame to give the wing its broad surface while keeping it light.</p>
+          <figure>
+            <video class="wing-test" controls playsinline preload="none" poster="assets/bionic-butterfly.webp" width="480" height="854" aria-label="Handheld wing-flapping test" aria-describedby="wing-test-caption">
+              <source src="assets/bionic-butterfly-demo.mp4" type="video/mp4">
+              <a href="assets/bionic-butterfly-demo.mp4">Watch the wing test</a>
+            </video>
+            <figcaption id="wing-test-caption">An early wing test. We held the body steady to watch the wings flex with each stroke.</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="build-stage">
+        <h2>The assembled butterfly</h2>
+        <div>
+          <p>With the wings attached on either side of the frame, each servo arm moved a wing at its root. As the arms reversed direction, the flexible outer edges followed, creating a flapping motion across the full span.</p>
+        </div>
+      </section>
+    </article>
     </main>
 </body>
 </html>

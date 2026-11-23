@@ -190,6 +190,21 @@ footer .button:hover { background: #254867; }
 }
 
 .card > a[href="bionic-butterfly.html"] img { object-position: center 46%; }
-.butterfly-detail { align-items: start; }
-.butterfly-detail video { display: block; width: 100%; max-width: 22rem; height: auto; margin-inline: auto; }
-.butterfly-detail h2 { font-size: 1.4rem; margin-block: 1.25rem .5rem; }
+.butterfly-build { max-width: 72rem; }
+.build-intro { max-width: 58ch; margin-block: 1.25rem 2.5rem; font-size: 1.125rem; }
+.build-stage {
+  display: grid;
+  grid-template-columns: minmax(11rem, 1fr) minmax(0, 2fr);
+  gap: 1rem clamp(1rem, 4vw, 4rem);
+  border-top: 1px solid var(--line);
+  padding-block: clamp(1.5rem, 3vw, 2.5rem);
+}
+.build-stage h2 { font-size: clamp(1.5rem, 2.5vw, 2.25rem); line-height: 1.12; }
+.build-stage p { max-width: 63ch; color: var(--muted); }
+.build-stage figure { margin: 1.25rem 0 0; }
+.build-stage video { display: block; width: 100%; height: auto; }
+.build-stage .wing-test { max-width: 18rem; }
+.build-stage figcaption { margin-top: .6rem; color: var(--muted); font-size: .9375rem; }
+@media (max-width: 43rem) {
+  .build-stage { grid-template-columns: minmax(0, 1fr); }
+}
